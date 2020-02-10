@@ -16,15 +16,15 @@ export class AccueilComponent implements OnInit {
   ngOnInit() {
     $(document).ready(function($){
       // Votre code ici avec les appels à la fonction $()
-$('.rond').hide();
+$('.contain').hide();
 
       $(window).scroll(function() {    
         var scroll = $(window).scrollTop();
     
         if (scroll >= 50) {
-             $('.rond').fadeIn('slow');
+             $('.contain').fadeIn('slow');
         } else {
-             $('.rond').fadeOut('slow');;
+             $('.contain').fadeOut('slow');;
         }
     });
    });

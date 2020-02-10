@@ -2,13 +2,17 @@
   width: 70%;
   margin: 0 auto;
     .contain {
+  
+      width: 10%;
       margin: 0 auto;
-      width: 5em;
-
-      .rond {
-        position: fixed;
-        width: 40%;
-      }
+      position: fixed;
+      right:10%;
+      width: 10%;
+       
+        img{
+          width: 100%;    
+        }
+      
     }
   #presentation {
     height: 100vh;
@@ -30,6 +34,7 @@
     h2 {
       text-align: center;
       text-transform: uppercase;
+      font-size: 2em;
     }
     .aPGlobal {
       display: flex;
@@ -84,10 +89,12 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 5%;
+    padding-bottom: 15%;
+    margin-top: 10vh;
     h2 {
       text-align: center;
       text-transform: uppercase;
+      font-size: 2em;
     }
     div {
       width: 20%;
@@ -96,9 +103,7 @@
       margin: 0 auto;
       padding-bottom: 5vh;
       justify-content: space-around;
-      img:hover{
-
-      }
+      
     }
     #mpMe {
       text-align: center;
@@ -164,8 +169,15 @@ footer {
         }
       }
     }
+    .btnCv{
+      min-width: 40%;
+    }
   }
   #contact{
     height: 30vh;
+    #mpMe{
+      min-width: 40%;
+
+    }
   }
 }
