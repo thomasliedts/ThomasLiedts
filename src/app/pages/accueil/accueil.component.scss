@@ -1,46 +1,119 @@
 #corps {
   width: 70%;
   margin: 0 auto;
-
-  #presentation {
-    height: 100vh;
     .contain {
       margin: 0 auto;
       width: 5em;
 
       .rond {
         position: fixed;
+        width: 40%;
       }
     }
+  #presentation {
+    height: 100vh;
+    text-align: center;
+    .txt {
+      padding-top: 20%;
+      text-transform: uppercase;
+    }
+
   }
 
   #aPropos {
-    height: 100vh;
-    ul {
-      list-style: none;
-      .sousList {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        align-items: center;
-      }
-      img {
-        vertical-align: middle;
-      }
-    }
-    .btnCv {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10vh;
+    h2 {
       text-align: center;
-      a {
-        background-color: #180191;
-        width: 10vw;
-        padding: 1.3em;
+      text-transform: uppercase;
+    }
+    .aPGlobal {
+      display: flex;
+      justify-content: space-around;
+      align-items: start;
+      width: 95%;
+      margin: 0 auto;
+      h3 {
+        text-transform: uppercase;
+      }
+      p {
+        width: 80%;
+      }
+      .col {
+        width: 30%;
+
+        .liste{
+          display: flex;
+         justify-content: flex-start;
+         align-items: center;
+        }
+      
+        ul {
+          width:60%;
+          margin: 0;
+          padding: 5%;
+          list-style: none;
+        }
       }
     }
+   
+    .btnCv {
+      font-size: 1em;
+        text-align: center;
+        padding-top: 10vh;
+        background-color: #180191;
+        width: 20%; 
+        padding: 1.3em;
+        transition: 0.5s;
+      }
+
+      a:hover {
+        background-color: #070707;
+        color: #180191;
+      }
+    
   }
 
   #contact {
-    height: 100vh;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 5%;
+    h2 {
+      text-align: center;
+      text-transform: uppercase;
+    }
+    div {
+      width: 20%;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      padding-bottom: 5vh;
+      justify-content: space-around;
+      img:hover{
+
+      }
+    }
+    #mpMe {
+      text-align: center;
+        padding-top: 10vh;
+        background-color: #180191;
+        width: 20%; 
+        padding: 1.3em;
+        transition: 0.5s;
+    }
+    #mpMe:hover {
+      background-color: #070707;
+      color: #180191;
+    }
   }
+
 }
 footer {
   width: 100vw;
@@ -66,5 +139,33 @@ footer {
         }
       }
     }
+  }
+}
+@media screen and (max-width:800px){
+  #presentation{
+    height: 30vh;
+  }
+  #aPropos{
+    padding-bottom: 5%;
+    .aPGlobal{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .col{
+        text-align: center;
+        width: 100%!important;
+        .liste{
+          flex-direction: column;
+        }
+        p{
+          width: 100%!important;
+          box-sizing: border-box;
+          padding: 5%;
+        }
+      }
+    }
+  }
+  #contact{
+    height: 30vh;
   }
 }
