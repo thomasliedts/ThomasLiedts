@@ -18,6 +18,12 @@
       padding-top: 20%;
       text-transform: uppercase;
     }
+    .img-block {
+      padding-top: 10px;
+      .profile-img {
+        height: 400px;
+      }
+    }
   }
 
   #aPropos {
@@ -140,8 +146,8 @@ footer {
   }
 }
 @media screen and (max-width: 800px) {
-  .contain{
-    min-width:10vw ;
+  .contain {
+    min-width: 10vw;
   }
   #presentation {
     height: 30vh;

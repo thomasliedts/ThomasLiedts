@@ -24,7 +24,7 @@ $('.contain').hide();
         if (scroll >= 50) {
              $('.contain').fadeIn('slow');
         } else {
-             $('.contain').fadeOut('slow');;
+             $('.contain').fadeOut('slow');
         }
     });
    });
