@@ -26,11 +26,12 @@ section {
       height: 30%;
       width: 80%;
       background-color: white;
-      margin: 10px 0px 55px 55px;
+      margin: 10px 0px 25px 55px;
     }
     .text-card {
       margin: 0 auto;
       display: flex;
+      margin-bottom: 30px;
       text-align: center;
       overflow: auto;
       width: 80%;
@@ -42,12 +43,17 @@ section {
       }
     }
     .btn-link {
-      margin-top: 5px;
       position: relative;
+      margin-top: 50px;
       left: 65%;
-      background-color: black;
+      background-color: #180191;
       padding: 9px 9px;
-      border-radius: 10px;
+      bottom: 0;
+      transition: 0.5s;
+    }
+    a:hover {
+      background-color: #070707;
+      color: #180191;
     }
   }
 }
