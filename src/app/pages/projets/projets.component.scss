@@ -62,14 +62,14 @@ section {
 
 @media screen and (max-width: 1080px) {
   .card {
-    min-width: 60%;
-    min-height: 80%;
+    min-width: 50%;
+    min-height: 65%;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 650px) {
   .card {
     min-width: 80%;
-    min-height: 80%;
+    min-height: 60%;
   }
 }
