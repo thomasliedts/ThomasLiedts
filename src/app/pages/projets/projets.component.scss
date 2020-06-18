@@ -2,6 +2,7 @@ section {
   display: flex;
   justify-content: center;
   margin: 0 auto;
+
   h1 {
     text-align: center;
   }
@@ -9,48 +10,53 @@ section {
 .container {
   display: flex;
   width: 100%;
-  height: 100vh;
   justify-content: center;
   flex-wrap: wrap;
-  position: absolute;
+  padding-bottom: 80px;
   .card {
-    background-color: red;
+    opacity: 0.5;
+    background-color: #3b3939;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     margin: 15px 50px;
-    height: 60%;
+
     width: 30%;
     border-radius: 5px;
-    overflow: auto;
+
     .title-card {
       text-align: center;
     }
     .img-card {
-      height: 30%;
+      min-height: 125px;
+      max-height: auto;
       width: 80%;
       background-color: white;
       margin: 0 auto;
       margin-bottom: 20px;
+      img {
+        width: 100%;
+        contain: content;
+        object-fit: cover;
+      }
     }
     .text-card {
       margin: 0 auto;
-      display: flex;
+      margin-top: 30px;
       margin-bottom: 30px;
       text-align: center;
-      overflow: auto;
       width: 80%;
-      height: 40%;
       p {
         margin: 0 auto;
         text-align: center;
         width: 100%;
+        opacity: 1;
       }
     }
     .btn-link {
-      position: relative;
-      margin-top: 50px;
-      left: 65%;
       background-color: #180191;
       padding: 9px 9px;
-      bottom: 0;
       transition: 0.5s;
     }
     a:hover {
@@ -58,18 +64,54 @@ section {
       color: #180191;
     }
   }
+  .card:hover {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
 }
 
 @media screen and (max-width: 1080px) {
-  .card {
-    min-width: 50%;
-    min-height: 65%;
+  .container {
+    min-height: 1600px;
+    .card {
+      min-width: 50%;
+    }
   }
 }
 
 @media screen and (max-width: 650px) {
-  .card {
-    min-width: 80%;
-    min-height: 60%;
+  .container {
+    display: flex;
+    width: 100%;
+    min-height: 1450px;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
+    .card {
+      min-width: 90%;
+      min-height: 250px;
+      .img-card {
+        height: 50px;
+      }
+      .text-card {
+        margin: 0 auto;
+        margin-top: 30px;
+        display: flex;
+        margin-bottom: 30px;
+        text-align: center;
+        width: 80%;
+        padding-top: 5%;
+        height: auto;
+        p {
+          margin: 0 auto;
+          text-align: center;
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .footer {
+    display: none;
   }
 }
