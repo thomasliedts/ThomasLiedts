@@ -27,7 +27,8 @@ section {
       height: 30%;
       width: 80%;
       background-color: white;
-      margin: 10px 0px 25px 55px;
+      margin: 0 auto;
+      margin-bottom: 20px;
     }
     .text-card {
       margin: 0 auto;
@@ -56,5 +57,19 @@ section {
       background-color: #070707;
       color: #180191;
     }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .card {
+    min-width: 60%;
+    min-height: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    min-width: 80%;
+    min-height: 80%;
   }
 }
